@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#categoria-meme,
+#seleccion-imagen,
+#personalizacion-meme,
+#color-borde,
+#botones-movimiento {
+    margin: 10px 0;
+}
+
+#meme-generado {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+    border: 5px solid black; /* Borde inicial */
+    padding: 10px;
+}
+
+#meme-generado img {
+    max-width: 100%;
+    height: auto;
+}
+
+#texto-meme {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    cursor: move; /* Indicador visual de que se puede mover */
+}
+
+#nombre-creador {
+    font-size: 18px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    color: white;
+}
+
+.borde-color {
+    /* El color del borde se cambiará dinámicamente con JavaScript */
+}
+
+#botones-movimiento {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.animated {
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

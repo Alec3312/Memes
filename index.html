@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Memes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Generador de Memes</h1>
+    
+    <!-- Selección de la categoría del meme -->
+    <div>
+        <label for="categoria">Elige una categoría:</label>
+        <select id="categoria">
+            <option value="gracioso">Gracioso</option>
+            <option value="motivacional">Motivacional</option>
+            <option value="sarcastico">Sarcástico</option>
+        </select>
+    </div>
+
+    <!-- Selección de la imagen del meme -->
+    <div>
+        <label for="imagen">Elige una imagen:</label>
+        <select id="imagen"></select>
+    </div>
+
+    <!-- Ingreso del mensaje -->
+    <div>
+        <label for="mensaje">Escribe tu mensaje:</label>
+        <input type="text" id="mensaje">
+    </div>
+
+    <!-- Ingreso del nombre del creador -->
+    <div>
+        <label for="creador">Nombre del creador:</label>
+        <input type="text" id="creador">
+    </div>
+
+    <!-- Elección del color del margen -->
+    <div id="color-margen">
+        <label for="color-margen-input">Elige el color del margen:</label>
+        <input type="color" id="color-margen-input">
+    </div>
+
+    <!-- Elección del color del texto del mensaje -->
+    <div id="color-texto-mensaje">
+        <label for="color-mensaje">Elige el color del mensaje:</label>
+        <input type="color" id="color-mensaje-input">
+    </div>
+
+    <!-- Elección del color del texto del creador -->
+    <div id="color-texto-creador">
+        <label for="color-creador">Elige el color del creador:</label>
+        <input type="color" id="color-creador-input">
+    </div>
+
+    <!-- Botón para generar el meme -->
+    <button id="generar-meme">Generar Meme</button>
+
+    <!-- Contenedor del meme generado -->
+    <div id="meme-generado" style="display: none;">
+        <img id="imagen-meme" alt="Imagen del meme">
+        <div id="texto-meme"></div>
+        <div id="nombre-creador"></div>
+    </div>
+
+    <!-- Botones para mover el texto -->
+    <div id="botones-movimiento">
+        <button id="mover-arriba">↑</button>
+        <button id="mover-abajo">↓</button>
+        <button id="mover-izquierda">←</button>
+        <button id="mover-derecha">→</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
